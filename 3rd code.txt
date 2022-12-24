@@ -1,0 +1,27 @@
+/*This program is prepared by 22CE069.*/
+#include<stdio.h>
+void main()
+{
+    int ms=21,user,comp;
+    while(1)
+    {
+        printf("\nEnter the number of match sticks:");
+        scanf("%d",&user);
+        if(user<1||user>4)
+        {
+            printf("\nYou choose wrong number of matchsticks.");
+            continue;
+        }
+        printf("\nYou choose %d number of match sticks",user);
+        ms=ms-user;
+        comp=5-user;
+        ms=ms-comp;
+        printf("\nComputer choose %d number of match sticks",comp);
+        if(ms==1)
+        {
+            break;
+        }
+        printf("\nComputer wins and user looses.");
+    }
+    printf("\nThis program is prepared by 22CE069.");
+}

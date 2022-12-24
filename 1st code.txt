@@ -1,0 +1,32 @@
+/*This program is prepared by 22CE069.*/
+#include<stdio.h>
+#include<ctype.h>
+void main()
+{
+    int low=0,up=0,dig=0;
+    char Array[10];
+    do
+    {
+        printf("Enter the password:");
+        scanf("%s",Array);
+        for(int i=0;i<=strlen(Array);i++)
+        {
+
+
+            if(isupper(Array[i]))
+            {
+                up=1;
+            }
+            else if(islower(Array[i]))
+            {
+                low=1;
+            }
+            else if(isdigit(Array[i]))
+            {
+                dig=1;
+            }
+        }
+    }while(up==0 || low==0 || dig==0);
+    printf("Your password is good enough.");
+    printf("This program is prepared by 22CE069.");
+}

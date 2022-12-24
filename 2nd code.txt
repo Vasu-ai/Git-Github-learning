@@ -1,0 +1,19 @@
+/*This program is prepared by 22CE069.*/
+#include<stdio.h>
+void main()
+{
+    float amount,price,total=0;
+    int i;
+    for(i=1;i>=1;i++)
+    {
+        printf("\nEnter the price:");
+        scanf("%f",&price);
+        total=total+price;
+        if(price==0)
+        {
+            break;
+        }
+        printf("\nTotal amount of your bill is: %f",total);
+    }
+    printf("\nThis program is prepared by 22CE069.");
+}
